@@ -107,21 +107,6 @@ HS_25km_grid <- grid_res(25, study_site)
 HS_50km_grid <- grid_res(50, study_site)
 HS_100km_grid <- grid_res(100, study_site)
 
-# Create an empty data frame and save to .csv file
-# csv_cols <- c("iteration", "gid", "sim_count", "mod_count", "dif")
-# 
-# csv_output <- data.frame(matrix(nrow = 1, ncol = length(csv_cols))) %>%
-#   rlang::set_names(csv_cols) %>%
-#   mutate(iteration = as.numeric(0),
-#          gid = as.numeric(0),
-#          sim_count = as.numeric(0),
-#          mod_count = as.numeric(0),
-#          dif = as.numeric(0))
-# 
-# csv_filename <- "difs_df_100km.csv"
-# 
-# write.csv(csv_output, file = csv_filename)
-
 # Create a spatial network graph ("visibility graph") outside of the iterations
 # prt_visgraph will build our visual graph network from our land barrier object and 
 # return a SpatialLinesNetwork / sfNetwork that has no edges that cross land
